@@ -1,12 +1,227 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="header_wrap">
+        <nav class="header_nav">
+          <ul class="header_list">
+            <li class="header_item">
+              <div class="header_item-wrap">
+                <a class="header_list-link" href="#">Главная</a>
+              </div>
+            </li>
+            <li class="header_item">
+              <div class="header_item-wrap">
+                <a class="header_list-link" href="#">О Седоне</a>
+              </div>
+            </li>
+            <li class="header_item">
+              <div class="header_item-wrap">
+                <a class="header_list-link" href="#">Гостинницы</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+        <img src="./img/logo_sedona.svg" alt="Logo" />
 
+        <div class="header_btn-group">
+          <button class="header_btn">
+            <img src="./img/search.svg" alt="Search" />
+          </button>
+          <button class="header_btn header_btn-img btn_count-likes">
+            <img src="./img/likes.svg" alt="Likes" />
+            <div class="count_likes">12</div>
+          </button>
+          <button class="header_btn-join">Хочу сюда!</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main_wrap">
+        <div class="screen">
+          <h2 class="screen_greeting">Welcome</h2>
+          <span class="screen_quality">— to the gorgeous —</span>
+          <h1 class="screen_title">Sedona</h1>
+          <p class="screen_quote">
+            "Because the Grand <br />
+            Canyon sucks!"
+          </p>
+        </div>
+
+        <section class="presentation">
+          <h3 class="presentation_subtitle">
+            Седона — небольшой городок в Аризоне,<br />
+            заслуживающий большего!
+          </h3>
+          <p class="presentation_discription">
+            Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
+          </p>
+
+          <div class="cards_row-1 card_height">
+            <div class="row1">
+              <h4 class="row1_subtitle">Настоящий городок</h4>
+              <p class="row1_serial-number">— №1 —</p>
+              <p class="row1_discription">
+                Седона — не аттракцион для туристов, там течёт своя жизнь
+              </p>
+            </div>
+            <div class="row1-img">
+              <img src="./img/main-page/bg-real_town.jpg" alt="some image" />
+            </div>
+          </div>
+
+          <div class="cards_row-2 card_height">
+            <div class="row2_house">
+              <img src="./img/main-page/house.svg" class="row2_img" />
+              <h4 class="row2_subtitle">Жилье</h4>
+              <p class="row2_discription">
+                Рекомендуем пожить в настоящем мотеле, всё как в кино!
+              </p>
+            </div>
+            <div class="row2_food">
+              <img src="./img/main-page/burger.svg" class="row2_img" />
+              <h4 class="row2_subtitle">Еда</h4>
+              <p class="row2_discription">
+                Всегда заказывайте топовый фирменный бургер, вы не
+                разочаруетесь!
+              </p>
+            </div>
+            <div class="row2_gift">
+              <img src="./img/main-page/gift.svg" class="row2_img" />
+              <h4 class="row2_subtitle">Сувениры</h4>
+              <p class="row2_discription">
+                Не только китайского, но и настоящего местного производства!
+              </p>
+            </div>
+          </div>
+
+          <div class="cards_row-3 card_height">
+            <div class="row3_img">
+              <img
+                src="./img/main-page/bg-devils_bridge.jpg"
+                alt="some bridge"
+              />
+            </div>
+            <div class="row3">
+              <h4 class="row3_subtitle">
+                Там есть<br />
+                мост дьявола!
+              </h4>
+              <p class="row3_serial-number">— №2 —</p>
+              <p class="row3_discription">
+                Да, по нему можно пройти! Если вы осмелитесь, разумеется
+              </p>
+            </div>
+          </div>
+
+          <div class="cards_row-4 card_height">
+            <div class="row4_small-area">
+              <h4 class="row4_subtitle">Небольшая площадь</h4>
+              <p class="row4_serial-number">— №3 —</p>
+              <p class="row4_discription">
+                Все достопримечательности находятся очень близко
+              </p>
+            </div>
+            <div class="row4_beatiful-road">
+              <h4 class="row4_subtitle">Красивая дорога</h4>
+              <p class="row4_serial-number">— №4 —</p>
+              <p class="row4_discription">
+                Ехать в Седону из Лас-Вегаса совсем не скучно!
+              </p>
+            </div>
+            <div class="row4_few-tourists">
+              <h4 class="row4_subtitle">Мало туристов</h4>
+              <p class="row4_serial-number">— №5 —</p>
+              <p class="row4_discription">
+                Большинство едет в Гранд Каньон и толпится там
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="offer">
+          <h3 class="offer_title">Заинтересовались?</h3>
+          <p class="offer_info">
+            <img src="./img/" alt="">
+            Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+            предложения гостиниц в Седоне
+          </p>
+          <button class="offer_search_hotel">Поиск гостиницы в Седоне</button>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_wrap">
+        <section class="mailing">
+          <h3 class="mailing_title">Подпишитесь на рассылку</h3>
+
+          <p class="mailing_description">
+            Только полезная информация и никакого спама, честное бойскаутское!
+          </p>
+
+          <form
+            class="mailing_form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <input
+              class="mailing_input"
+              placeholder="Ваш e-mail"
+              type="email"
+              name="subscription"
+              required
+            />
+
+            <button class="mailing_submit" type="submit">Подписаться</button>
+          </form>
+        </section>
+
+        <section class="contacts">
+          <div class="contacts_social">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <ul class="contacts_social_list">
+              <li class="contacts_social_item">
+                <a class="contacts_link" href="#">
+                  <span class="visually-hidden contacts_link-title"
+                    >Твиттер</span
+                  >
+                  <img src="./img/social-twitter.svg" alt="" />
+                </a>
+              </li>
+              <li class="contacts_social_item">
+                <a class="contacts_link" href="#">
+                  <span class="visually-hidden contacts_link-title"
+                    >Фейсбук</span
+                  >
+                  <img src="./img/social-facebook.svg" alt="" />
+                </a>
+              </li>
+              <li class="contacts_social_item">
+                <a class="contacts_link" href="#">
+                  <span class="visually-hidden contacts_link-title">Ютуб</span>
+                  <img src="./img/social-youtube.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <span class="contacts_number">+7 (812) 812-12-12</span>
+
+          <img
+            class="contacts_logo"
+            src="./img/logo-academy.svg"
+            alt=".htmlacademy"
+          />
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
