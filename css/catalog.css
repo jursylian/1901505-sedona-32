@@ -1,0 +1,110 @@
+.search_parametrs_title {
+  font-size: 60px;
+  color: var(--color-white);
+  font-family: "PTSansBold";
+}
+
+.breadcrumbs_current_page {
+  color: var(--color-white);
+}
+
+.filter_parametrs_catalog_subtitle {
+  font-size: var(--size-nav-menu);
+  color: var(--color-white);
+  font-family: "PTSansBold";
+}
+
+.filter_parametrs_item {
+  font-size: var(--size-form-list);
+}
+
+.cost_from,
+.cost_to {
+  font-size: var(--size-form-list);
+  color: rgba(255, 255, 255, 1);
+}
+
+.filter_parametrs_apply {
+  background: var(--btn-bg-cold-blue);
+  color: var(--color-white);
+  text-align: center;
+  font-family: "PTSansBold";
+  text-transform: uppercase;
+}
+
+.filter_parametrs_reset {
+  color: var(--color-white);
+  text-align: center;
+  font-size: 18px;
+}
+
+.search_results_subtitle {
+  font-size: 30px;
+  font-family: "PTSansBold";
+  color: var(--color-black);
+  text-transform: uppercase;
+}
+
+.search_results_select {
+  font-size: 18px;
+}
+
+.product-card-link {
+  font-family: "PTSansBold";
+  font-size: var(--size-cards-title);
+  color: var(--color-black);
+}
+
+.type_of_house,
+.sort_list_price {
+  font-size: 18px;
+}
+
+.sort_list_details,
+.sort_list_favorite,
+.sort_list_show_more {
+  background: var(--btn-bg-warm-brown);
+  color: var(--color-white);
+  font-family: "PTSansBold";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sort_list_favorite {
+  background: var(--btn-bg-cold-blue);
+}
+
+.sort_list_favorite-add {
+  background: var(--btn-bg-natural-green);
+}
+
+.sort_list_total_rating {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sort_list_show_more {
+  background: var(--btn-bg-cold-blue);
+  font-size: 20px;
+}
+
+.pagination_button {
+  color: var(--color-white);
+  font-size: 20px;
+  text-align: center;
+  background-color: var(--btn-bg-cold-blue);
+  font-family: "PTSansBold";
+}
+
+.pagination_button-current {
+  background: #f2f2f2;
+  color: var(--color-black);
+}
+
+.display_number_hotels {
+  font-size: 18px;
+}
+
+.display_number_hotels_select {
+  font-size: 18px;
+}
