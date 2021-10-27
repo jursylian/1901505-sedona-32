@@ -19,6 +19,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "PTSansBold";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+}
+
 body {
   min-height: 100%;
   color: var(--color-grey-black);
@@ -69,6 +77,7 @@ body {
   font-size: var(--size-nav-menu);
   line-height: 26px;
   font-weight: 700;
+  font-family: "PTSansBold";
 }
 
 .header_btn_group {
@@ -81,6 +90,7 @@ body {
 
 .header_btn-join {
   font-weight: 700;
+  font-family: "PTSansBold";
   font-size: 16px;
   color: var(--color-white);
   text-transform: uppercase;
@@ -95,6 +105,7 @@ body {
 
 .presentation_title {
   font-weight: 700;
+  font-family: "PTSansBold";
   font-size: 30px;
   line-height: 36px;
   color: var(--color-black);
@@ -202,6 +213,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  font-family: "PTSansBold";
   text-transform: uppercase;
 }
 
@@ -216,6 +228,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  font-family: "PTSansBold";
   text-transform: uppercase;
 }
 
@@ -224,6 +237,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  font-family: "PTSansBold";
   text-transform: uppercase;
 }
 
@@ -256,6 +270,7 @@ body {
 .subscription_submit {
   color: var(--color-white);
   font-weight: 700;
+  font-family: "PTSansBold";
   font-size: 20px;
   line-height: 26px;
   text-transform: uppercase;
@@ -295,6 +310,7 @@ body {
   line-height: 78px;
   color: var(--color-white);
   font-weight: 700;
+  font-family: "PTSansBold";
 }
 
 .breadcrumbs {
@@ -311,6 +327,7 @@ body {
   line-height: 26px;
   color: var(--color-white);
   font-weight: 700;
+  font-family: "PTSansBold";
   text-align: left;
 }
 
@@ -338,6 +355,7 @@ body {
   background: var(--btn-bg-cold-blue);
   color: var(--color-white);
   font-weight: 700;
+  font-family: "PTSansBold";
   text-transform: uppercase;
   font-size: 16px;
 }
@@ -351,6 +369,7 @@ body {
   font-size: 30px;
   line-height: 39px;
   font-weight: 700;
+  font-family: "PTSansBold";
   color: var(--color-black);
   text-transform: uppercase;
   text-align: left;
@@ -362,6 +381,7 @@ body {
 
 .product-card-link {
   font-weight: 700;
+  font-family: "PTSansBold";
   font-size: var(--size-cards-title);
   line-height: 31px;
   color: var(--color-black);
@@ -380,6 +400,7 @@ body {
   background: var(--btn-bg-warm-brown);
   color: var(--color-white);
   font-weight: 700;
+  font-family: "PTSansBold";
   text-transform: uppercase;
 }
 
@@ -411,6 +432,7 @@ body {
   font-size: inherit;
   background-color: var(--btn-bg-cold-blue);
   font-weight: 700;
+  font-family: "PTSansBold";
 }
 
 .pagination_button-current {
