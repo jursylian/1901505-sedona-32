@@ -268,20 +268,50 @@ body {
 
 /* catalog style */
 /* --------------------------------------------------------------- */
+.search_parametrs {
+  background-image: url("../img/catalog-page/catalog-background.jpg");
+  background-size: cover;
+  width: 1200px;
+  height: 408px;
+  background-repeat: no-repeat;
+}
+
+.search_parametrs_wrap {
+  width: 1056px;
+  margin: 0 auto;
+}
+
 .search_parametrs_title {
   font-size: 60px;
   line-height: 78px;
   color: var(--color-white);
   font-weight: 700;
+  text-align: left;
+  padding-top: 34px;
+  margin: 0;
 }
 
 .breadcrumbs {
   text-align: left;
+  display: flex;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.breadcrumbs_item {
+  margin-right: 10px;
 }
 
 .breadcrumbs_current_page {
   font-size: 16px;
   color: var(--color-white);
+}
+
+.filter_parametrs_catalog_form {
+  display: flex;
+  justify-content: space-between;
 }
 
 .filter_parametrs_catalog_subtitle {
@@ -290,19 +320,58 @@ body {
   color: var(--color-white);
   font-weight: 700;
   text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.filter_parametrs_cost_wrap {
+  width: 287px;
+}
+
+.filter_parametrs_input_cost {
+  width: 143px;
+  background: transparent;
+  border: 2px solid #fff;
+  padding: 0;
+  border-radius: 2px;
+  margin: 0;
+  height: 48px;
+}
+
+.filter_parametrs_input_cost-from {
+  position: relative;
+}
+
+.cost_from {
+  position: absolute;
+  top: 11px;
+  right: 14px;
+}
+
+.filter_parametrs_input_cost-to {
+  position: relative;
+}
+
+.cost_to {
+  position: absolute;
+  top: 11px;
+  right: 14px;
 }
 
 .filter_parametrs_list {
   text-align: left;
+  padding: 0;
 }
 
 .filter_parametrs_item {
   font-size: var(--size-form-list);
   line-height: 23px;
+  list-style: none;
+  padding: 0;
 }
 
-.catalog_filter_title {
-  text-align: left;
+.filter_parametrs_label {
+  padding-left: 19px;
 }
 
 .cost_from,
@@ -310,6 +379,11 @@ body {
   font-size: var(--size-form-list);
   line-height: 23px;
   color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+}
+
+.filter_parametrs_inputs_wrap {
+  display: flex;
 }
 
 .filter_parametrs_apply {
@@ -323,6 +397,17 @@ body {
 .filter_parametrs_reset {
   color: var(--color-white);
   line-height: 23px;
+}
+
+.search_results_wrap {
+  width: 1056px;
+  margin: 0 auto;
+}
+
+.search_filter_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .search_results_subtitle {
@@ -352,6 +437,25 @@ body {
   text-align: left;
 }
 
+.sort_list {
+  padding: 0;
+}
+
+.sort_list_card {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort_list_description {
+  display: flex;
+}
+
+.product_card_wrap {
+  margin-left: 36px;
+}
+
 .sort_list_details,
 .sort_list_favorite,
 .sort_list_show_more {
@@ -373,10 +477,24 @@ body {
   text-transform: uppercase;
 }
 
+.sort_list_card-show_more {
+  display: block;
+  margin: 31px 0 30px;
+}
+
 .sort_list_show_more {
   background: var(--btn-bg-cold-blue);
   font-size: 20px;
   line-height: 26px;
+}
+
+.sort_list_stars {
+  display: flex;
+}
+
+.pagination_wrap {
+  display: flex;
+  justify-content: space-between;
 }
 
 .pagination_item {
@@ -391,13 +509,61 @@ body {
   font-weight: 700;
 }
 
-.pagination_button-current {
-  background: #f2f2f2;
-  color: var(--color-black);
-}
-
 .display_number_hotels,
 .display_number_hotels_select {
   line-height: 23px;
   text-align: left;
+}
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+}
+
+.pagination_item {
+  width: 55px;
+  height: 55px;
+  background-color: var(--btn-bg-cold-blue);
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination_button {
+  text-decoration: none;
+}
+
+.pagination_button-current {
+  background: #f2f2f2;
+  color: var(--color-black);
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display_number_hotel_wrap {
+  display: flex;
+}
+
+.subscription_catalog {
+  padding-top: 89px;
+}
+
+.subscription_subtitle-catalog {
+  color: var(--color-black);
+}
+
+.footer_social_networks_list {
+  list-style: none;
+  padding: 0;
+}
+
+.subscription_catalog,
+.footer_contacts {
+  width: 1056px;
+  margin: 0 auto;
 }
