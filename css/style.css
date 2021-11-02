@@ -328,6 +328,7 @@ body {
   width: 287px;
 }
 
+/* Range */
 .filter_parametrs_input_cost {
   width: 143px;
   background: transparent;
@@ -336,6 +337,38 @@ body {
   border-radius: 2px;
   margin: 0;
   height: 48px;
+}
+
+.range_toggle {
+  width: 287px;
+  border-bottom: 4px solid #afb1b3;
+}
+
+.range_toggle_wrap {
+  border-bottom: 4px solid #fff;
+  position: relative;
+  margin-top: 30px;
+  transform: translateY(4px);
+}
+
+.range_toggle-min,
+.range_toggle-max {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: transparent;
+}
+
+.range_toggle-min {
+  position: absolute;
+  top: -8px;
+  left: -1px;
+}
+
+.range_toggle-max {
+  position: absolute;
+  top: -8px;
+  right: -1px;
 }
 
 .filter_parametrs_input_cost-from {
