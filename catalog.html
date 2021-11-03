@@ -40,7 +40,7 @@
     <main class="main">
       <div class="main_wrap">
         <section class="search_parametrs">
-          <div class="search_parametrs_wrap">
+          <div class="container_wrap">
             <div class="search_parametrs_wrap_navigation">
               <h1 class="search_parametrs_title">Гостиницы Седоны</h1>
 
@@ -72,94 +72,98 @@
                 action="https://echo.htmlacademy.ru/"
                 method="get"
               >
-                <ul class="filter_parametrs_list">
+                <div>
                   <h2 class="filter_parametrs_catalog_subtitle">
                     Инфраструктура:
                   </h2>
-                  <li class="filter_parametrs_item">
-                    <input
-                      id="swimming_pool"
-                      type="checkbox"
-                      name="infrastructure"
-                      value="swimming_pool"
-                      checked
-                    />
-                    <label class="filter_parametrs_label" for="swimming_pool"
-                      >Бассейн</label
-                    >
-                  </li>
+                  <ul class="filter_parametrs_list">
+                    <li class="filter_parametrs_item">
+                      <input
+                        id="swimming_pool"
+                        type="checkbox"
+                        name="infrastructure"
+                        value="swimming_pool"
+                        checked
+                      />
+                      <label class="filter_parametrs_label" for="swimming_pool"
+                        >Бассейн</label
+                      >
+                    </li>
 
-                  <li class="filter_parametrs_item">
-                    <input
-                      id="parking"
-                      type="checkbox"
-                      value="parking"
-                      name="infrastructure"
-                      checked
-                    />
-                    <label class="filter_parametrs_label" for="parking"
-                      >Парковка</label
-                    >
-                  </li>
+                    <li class="filter_parametrs_item">
+                      <input
+                        id="parking"
+                        type="checkbox"
+                        value="parking"
+                        name="infrastructure"
+                        checked
+                      />
+                      <label class="filter_parametrs_label" for="parking"
+                        >Парковка</label
+                      >
+                    </li>
 
-                  <li class="filter_parametrs_item">
-                    <input
-                      type="checkbox"
-                      id="wi_fi"
-                      value="wi-fi"
-                      name="infrastructure"
-                    />
-                    <label class="filter_parametrs_label" for="wi_fi"
-                      >Wi-Fi</label
-                    >
-                  </li>
-                </ul>
+                    <li class="filter_parametrs_item">
+                      <input
+                        type="checkbox"
+                        id="wi_fi"
+                        value="wi-fi"
+                        name="infrastructure"
+                      />
+                      <label class="filter_parametrs_label" for="wi_fi"
+                        >Wi-Fi</label
+                      >
+                    </li>
+                  </ul>
+                </div>
 
-                <ul class="filter_parametrs_list">
+                <div>
                   <h2 class="filter_parametrs_catalog_subtitle">Тип жилья:</h2>
-                  <li class="filter_parametrs_item">
-                    <input
-                      type="radio"
-                      value="hotel"
-                      name="real-estate"
-                      id="hotel"
-                      checked
-                    />
-                    <label class="filter_parametrs_label" for="hotel"
-                      >Гостиница</label
-                    >
-                  </li>
+                  <ul class="filter_parametrs_list">
+                    <li class="filter_parametrs_item">
+                      <input
+                        type="radio"
+                        value="hotel"
+                        name="real-estate"
+                        id="hotel"
+                        checked
+                      />
+                      <label class="filter_parametrs_label" for="hotel"
+                        >Гостиница</label
+                      >
+                    </li>
 
-                  <li class="filter_parametrs_item">
-                    <input
-                      type="radio"
-                      value="motel"
-                      name="real-estate"
-                      id="motel"
-                    />
-                    <label
-                      class="filter_parametrs_label"
-                      for="motel"
-                      class="control"
-                      >Мотель</label
-                    >
-                  </li>
+                    <li class="filter_parametrs_item">
+                      <input
+                        type="radio"
+                        value="motel"
+                        name="real-estate"
+                        id="motel"
+                      />
+                      <label
+                        class="filter_parametrs_label"
+                        for="motel"
+                        class="control"
+                        >Мотель</label
+                      >
+                    </li>
 
-                  <li class="filter_parametrs_item">
-                    <input
-                      type="radio"
-                      value="apartments"
-                      name="real-estate"
-                      id="apartments"
-                    />
-                    <label
-                      class="filter_parametrs_label"
-                      for="apartments"
-                      class="control"
-                      >Апартаменты</label
-                    >
-                  </li>
-                </ul>
+                    <li class="filter_parametrs_item">
+                      <input
+                        type="radio"
+                        value="apartments"
+                        name="real-estate"
+                        id="apartments"
+                      />
+                      <label
+                        class="filter_parametrs_label"
+                        for="apartments"
+                        class="control"
+                        >Апартаменты</label
+                      >
+                    </li>
+                  </ul>
+                </div>
 
                 <div class="filter_parametrs_cost_wrap">
                   <h2 class="filter_parametrs_catalog_subtitle">
@@ -173,7 +177,7 @@
                         value="0"
                         name="min-price"
                       />
-                      <span class="cost_from">от</span>
+                      <span class="cost_from_to">от</span>
                     </div>
 
                     <div class="filter_parametrs_input_cost-to">
@@ -183,7 +187,7 @@
                         value="9000"
                         name="max-price"
                       />
-                      <span class="cost_to">до</span>
+                      <span class="cost_from_to">до</span>
                     </div>
                   </div>
                   <button
@@ -219,7 +223,7 @@
         </section>
 
         <section class="search_results">
-          <div class="search_results_wrap">
+          <div class="container_wrap">
             <div class="search_filter_wrap">
               <h2 class="search_results_subtitle">Найдено гостиниц: 38</h2>
               <form class="search_results_sorting">
@@ -475,7 +479,7 @@
 
     <footer class="footer">
       <div class="footer_wrap">
-        <section class="subscription_catalog">
+        <section class="subscription_catalog container_wrap">
           <h2 class="subscription_subtitle subscription_subtitle-catalog">
             Подпишитесь на рассылку
           </h2>
@@ -503,7 +507,7 @@
           </form>
         </section>
 
-        <section class="footer_contacts">
+        <section class="footer_contacts container_wrap">
           <div class="foooter_contacts_wrap">
             <h2 class="visually-hidden">Контакты</h2>
             <ul class="footer_social_networks_list">
