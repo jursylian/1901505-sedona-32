@@ -8,31 +8,39 @@
   <body>
     <header class="header">
       <div class="header_wrap">
-        <nav class="header_nav">
-          <ul class="header_list">
-            <li class="header_item">
-              <a class="header_list-link" href="./index.html">Главная</a>
-            </li>
-            <li class="header_item">
-              <a class="header_list-link" href="#">О Седоне</a>
-            </li>
-            <li class="header_item">
-              <a class="header_list-link" href="./catalog.html">Гостинницы</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="container_wrap header_container_wrap">
+          <nav class="header_nav">
+            <ul class="header_list">
+              <li class="header_item">
+                <a class="header_list-link" href="./index.html">Главная</a>
+              </li>
+              <li class="header_item">
+                <a class="header_list-link" href="#">О Седоне</a>
+              </li>
+              <li class="header_item">
+                <a class="header_list-link" href="./catalog.html">Гостинницы</a>
+              </li>
+            </ul>
+          </nav>
 
-        <img src="./img/logo_sedona.svg" width="138" height="70" alt="Logo" />
+          <img
+            src="./img/logo_sedona.svg"
+            class="header_logo"
+            width="138"
+            height="70"
+            alt="Logo"
+          />
 
-        <div class="header_btn-group">
-          <a class="header_btn" href="#">
-            <img src="./img/search.svg" width="18" height="18" alt="Search" />
-          </a>
-          <a class="header_btn header_btn-img btn_count-likes" href="#">
-            <img src="./img/likes.svg" width="18" height="17" alt="Likes" />
-            <span class="count_likes">12</span>
-          </a>
-          <a class="header_btn-join" href="#">Хочу сюда!</a>
+          <div class="header_btn_group">
+            <a class="header_btn" href="#">
+              <img src="./img/search.svg" width="18" height="18" alt="Search" />
+            </a>
+            <a class="header_btn header_btn-img btn_count-likes" href="#">
+              <img src="./img/likes.svg" width="18" height="17" alt="Likes" />
+              <span class="count_likes">12</span>
+            </a>
+            <a class="header_btn-join" href="#">Хочу сюда!</a>
+          </div>
         </div>
       </div>
     </header>
@@ -209,7 +217,7 @@
                   </button>
                 </div>
 
-                <div>
+                <div class="filter_parametrs_btn_group">
                   <button class="filter_parametrs_apply" type="submit">
                     Применить
                   </button>
@@ -274,13 +282,19 @@
                     height="120"
                   />
                   <div class="product_card_wrap">
-                    <h2 class="product-card-title">
-                      <a class="product-card-link" href="#">
-                        Amara Resort & Spa
-                      </a>
-                    </h2>
-                    <span class="type_of_house">Гостиница</span>
-                    <span class="sort_list_price">От 4000 ₽</span>
+                    <div>
+                      <h2 class="product_card_title">
+                        <a class="product_card_link" href="#">
+                          Amara Resort & Spa
+                        </a>
+                      </h2>
+
+                      <div class="type_of_house_wrap">
+                        <span class="type_of_house">Гостиница</span>
+                        <span class="sort_list_price">От 4000 ₽</span>
+                      </div>
+                    </div>
+
                     <div class="sort_list_btn_group">
                       <button class="sort_list_details" type="button">
                         подробнее
@@ -314,13 +328,19 @@
                   />
 
                   <div class="product_card_wrap">
-                    <h2 class="product-card-title">
-                      <a class="product-card-link" href="#">
-                        Desert Quail Inn
-                      </a>
-                    </h2>
-                    <span class="type_of_house">Мотель</span>
-                    <span class="sort_list_price">От 3000 ₽</span>
+                    <div>
+                      <h2 class="product_card_title">
+                        <a class="product_card_link" href="#">
+                          Desert Quail Inn
+                        </a>
+                      </h2>
+
+                      <div class="type_of_house_wrap">
+                        <span class="type_of_house">Мотель</span>
+                        <span class="sort_list_price">От 3000 ₽</span>
+                      </div>
+                    </div>
+
                     <div class="sort_list_btn_group">
                       <button class="sort_list_details" type="button">
                         подробнее
@@ -352,15 +372,19 @@
                   />
 
                   <div class="product_card_wrap">
-                    <h2 class="product-card-title">
-                      <a class="product-card-link" href="#">
-                        Villas at Poco Diablo
-                      </a>
-                    </h2>
+                    <div>
+                      <h2 class="product_card_title">
+                        <a class="product_card_link" href="#">
+                          Villas at Poco Diablo
+                        </a>
+                      </h2>
 
-                    <span class="type_of_house">Апартаменты</span>
+                      <div class="type_of_house_wrap">
+                        <span class="type_of_house">Апартаменты</span>
+                        <span class="sort_list_price">От 3000 ₽</span>
+                      </div>
+                    </div>
 
-                    <span class="sort_list_price">От 3000 ₽</span>
                     <div class="sort_list_btn_group">
                       <button class="sort_list_details" type="button">
                         подробнее
@@ -394,12 +418,19 @@
                   />
 
                   <div class="product_card_wrap">
-                    <h2 class="product-card-title">
-                      <a class="product-card-link" href="#"> GreenTree Inn </a>
-                    </h2>
-                    <span class="type_of_house">Гостиница</span>
+                    <div>
+                      <h2 class="product_card_title">
+                        <a class="product_card_link" href="#">
+                          GreenTree Inn
+                        </a>
+                      </h2>
 
-                    <span class="sort_list_price">От 3000 ₽</span>
+                      <div class="type_of_house_wrap">
+                        <span class="type_of_house">Гостиница</span>
+                        <span class="sort_list_price">От 3000 ₽</span>
+                      </div>
+                    </div>
+
                     <div class="sort_list_btn_group">
                       <button class="sort_list_details" type="button">
                         подробнее
@@ -484,8 +515,9 @@
             Подпишитесь на рассылку
           </h2>
 
-          <p class="subscription_description">
-            Только полезная информация и никакого спама, честное бойскаутское!
+          <p class="subscription_description subscription_description-catalog">
+            Только полезная информация и никакого спама,<br />
+            честное бойскаутское!
           </p>
 
           <form
@@ -494,7 +526,7 @@
             method="post"
           >
             <input
-              class="subscription_input"
+              class="subscription_input subscription_input-catalog"
               placeholder="Ваш e-mail"
               type="email"
               name="subscription"
@@ -545,10 +577,11 @@
           </div>
 
           <span class="footer_phone_number">+7 (812) 812-12-12</span>
+
           <a class="footer_htmlacademy_link" href="https://htmlacademy.ru/">
             <img
               src="./img/logo_htmlacademy.svg"
-              alt="htmlacademy"
+              alt="logo link htmlacademy"
               width="115"
               height="34"
             />
