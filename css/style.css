@@ -353,6 +353,7 @@ body {
 .footer_contacts {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 40px 0 30px;
 }
 
@@ -370,13 +371,6 @@ body {
   font-size: 40px;
   line-height: 40px;
   color: var(--color-black);
-  display: flex;
-  align-items: center;
-}
-
-.footer_htmlacademy_link {
-  display: flex;
-  align-items: center;
 }
 
 /* catalog style */
@@ -436,7 +430,7 @@ body {
   font-weight: 700;
   text-align: left;
 
-  margin: 30px 0 0;
+  margin: 0 0 30px;
 }
 
 .filter_parametrs_cost_wrap {
@@ -451,6 +445,10 @@ body {
   border-radius: 2px;
   margin: 0;
   height: 44px;
+  color: #fff;
+  font-size: 18px;
+  font-family: "PTSans";
+  padding-left: 19px;
 }
 
 .filter_parametrs_input_cost-from {
@@ -461,6 +459,8 @@ body {
   position: absolute;
   top: 11px;
   right: 14px;
+  color: #fff;
+  opacity: 0.3;
 }
 
 .filter_parametrs_input_cost-to {
@@ -478,10 +478,60 @@ body {
   line-height: 23px;
   list-style: none;
   padding: 0;
+  margin-bottom: 13px;
+}
+
+.filter_parametrs_checkbox[type="checkbox"] {
+  display: none;
+}
+
+.filter_parametrs_checkbox[type="checkbox"] + label span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin-right: 19px;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter_parametrs_checkbox[type="checkbox"]:checked + label span::before {
+  content: "";
+  background: url(../img/catalog-page/mark-checked.svg) center no-repeat;
+  height: 19px;
+  width: 19px;
+  display: block;
+}
+
+.filter_parametrs_radio[type="radio"] {
+  display: none;
+}
+
+.filter_parametrs_radio[type="radio"] + label span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin-right: 19px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.filter_parametrs_radio[type="radio"]:checked + label span::before {
+  content: "";
+  background-color: #3f5e72;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
 }
 
 .filter_parametrs_label {
-  padding-left: 19px;
+  color: #fff;
 }
 
 .cost_from,
@@ -496,10 +546,42 @@ body {
   display: flex;
 }
 
+.range_toggle {
+  width: 287px;
+  border-bottom: 4px solid #afb1b3;
+}
+
+.range_toggle_wrap {
+  border-bottom: 4px solid #fff;
+  position: relative;
+  margin-top: 30px;
+  transform: translateY(4px);
+}
+
+.range_toggle-min,
+.range_toggle-max {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: transparent;
+}
+
+.range_toggle-min {
+  position: absolute;
+  top: -8px;
+  left: -1px;
+}
+
+.range_toggle-max {
+  position: absolute;
+  top: -8px;
+  right: -1px;
+}
+
 .filter_parametrs_btn_group {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  transform: translateY(54px);
 }
 
 .filter_parametrs_apply {
@@ -541,13 +623,21 @@ body {
 
 .search_results_select {
   line-height: 23px;
+  padding: 12px 0 12px 19px;
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+  color: #333;
+  width: 287px;
+  appearance: none;
+  background: url("../img/catalog-page/dropdown-mark.svg") no-repeat;
+  background-position: 251px center;
 }
 
 .search_results_sort_btn {
   border: 2px solid #e6e6e6;
   border-radius: 4px;
   background-color: transparent;
-  padding: 17px 16px;
+  padding: 13px 14px;
 }
 
 .search_results_sort_table:hover,
@@ -660,7 +750,8 @@ body {
   width: 160px;
   background-color: #f2f2f2;
   border-radius: 4px;
-  margin: 9px 0 10px;
+  padding: 9px 0 10px;
+  margin: 0;
 }
 
 .sort_list_card-show_more {
@@ -680,20 +771,23 @@ body {
 
 .sort_list_stars {
   display: flex;
+  justify-content: center;
   list-style: none;
+  padding: 0;
 }
 
 .star {
   width: 18px;
   height: 17px;
   background-image: url("../img/catalog-page/star.svg");
-  margin-left: 7px;
+  padding: 0 3.5px;
   background-repeat: no-repeat;
 }
 
 .pagination_wrap {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .pagination_item {
@@ -712,6 +806,17 @@ body {
 .display_number_hotels_select {
   line-height: 23px;
   text-align: left;
+}
+
+.display_number_hotels_select {
+  padding: 12px 0 12px 19px;
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+  color: #333;
+  width: 160px;
+  appearance: none;
+  background: url("../img/catalog-page/dropdown-mark.svg") no-repeat;
+  background-position: 124px center;
 }
 
 .pagination {
@@ -746,6 +851,11 @@ body {
 
 .display_number_hotel_wrap {
   display: flex;
+}
+
+.filter_parametrs_label-color {
+  color: var(--color-grey-black);
+  margin: 12px 51px 0 0;
 }
 
 .subscription_subtitle-catalog {

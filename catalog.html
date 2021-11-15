@@ -80,39 +80,45 @@
                 <ul class="filter_parametrs_list">
                   <li class="filter_parametrs_item">
                     <input
+                      class="filter_parametrs_checkbox"
                       id="swimming_pool"
                       type="checkbox"
                       name="infrastructure"
                       value="swimming_pool"
                       checked
                     />
-                    <label class="filter_parametrs_label" for="swimming_pool"
-                      >Бассейн</label
+                    <label class="filter_parametrs_label" for="swimming_pool">
+                      <span></span>
+                      Бассейн</label
                     >
                   </li>
 
                   <li class="filter_parametrs_item">
                     <input
+                      class="filter_parametrs_checkbox"
                       id="parking"
                       type="checkbox"
                       value="parking"
                       name="infrastructure"
                       checked
                     />
-                    <label class="filter_parametrs_label" for="parking"
-                      >Парковка</label
+                    <label class="filter_parametrs_label" for="parking">
+                      <span></span>
+                      Парковка</label
                     >
                   </li>
 
                   <li class="filter_parametrs_item">
                     <input
+                      class="filter_parametrs_checkbox"
                       type="checkbox"
                       id="wi_fi"
                       value="wi-fi"
                       name="infrastructure"
                     />
-                    <label class="filter_parametrs_label" for="wi_fi"
-                      >Wi-Fi</label
+                    <label class="filter_parametrs_label" for="wi_fi">
+                      <span></span>
+                      Wi-Fi</label
                     >
                   </li>
                 </ul>
@@ -124,19 +130,22 @@
                   <li class="filter_parametrs_item">
                     <input
                       type="radio"
+                      class="filter_parametrs_radio"
                       value="hotel"
                       name="real-estate"
                       id="hotel"
                       checked
                     />
-                    <label class="filter_parametrs_label" for="hotel"
-                      >Гостиница</label
-                    >
+                    <label class="filter_parametrs_label" for="hotel">
+                      <span></span>
+                      Гостиница
+                    </label>
                   </li>
 
                   <li class="filter_parametrs_item">
                     <input
                       type="radio"
+                      class="filter_parametrs_radio"
                       value="motel"
                       name="real-estate"
                       id="motel"
@@ -145,13 +154,16 @@
                       class="filter_parametrs_label"
                       for="motel"
                       class="control"
-                      >Мотель</label
                     >
+                      <span></span>
+                      Мотель
+                    </label>
                   </li>
 
                   <li class="filter_parametrs_item">
                     <input
                       type="radio"
+                      class="filter_parametrs_radio"
                       value="apartments"
                       name="real-estate"
                       id="apartments"
@@ -160,8 +172,10 @@
                       class="filter_parametrs_label"
                       for="apartments"
                       class="control"
-                      >Апартаменты</label
                     >
+                      <span></span>
+                      Апартаменты
+                    </label>
                   </li>
                 </ul>
               </div>
@@ -189,23 +203,28 @@
                     <span class="cost_from_to">до</span>
                   </div>
                 </div>
-                <button
-                  class="filter_parametrs_range-toggle toggle-min"
-                  type="button"
-                >
-                  <span class="visually-hidden"
-                    >Изменить минимальную цену.</span
-                  >
-                </button>
 
-                <button
-                  class="filter_parametrs_range-toggle toggle-max"
-                  type="button"
-                >
-                  <span class="visually-hidden"
-                    >Изменить максимальную цену.</span
-                  >
-                </button>
+                <div class="range_toggle">
+                  <div class="range_toggle_wrap" style="width: 236px; left: 0">
+                    <button
+                      class="filter_parametrs_range-toggle range_toggle-min"
+                      type="button"
+                    >
+                      <span class="visually-hidden"
+                        >Изменить минимальную цену.</span
+                      >
+                    </button>
+
+                    <button
+                      class="filter_parametrs_range-toggle range_toggle-max"
+                      type="button"
+                    >
+                      <span class="visually-hidden"
+                        >Изменить максимальную цену.</span
+                      >
+                    </button>
+                  </div>
+                </div>
               </div>
 
               <div class="filter_parametrs_btn_group">
@@ -456,7 +475,7 @@
                 </div>
               </div>
 
-              <div>
+              <div class="sort_list_rating">
                 <ul class="sort_list_stars">
                   <li class="star"></li>
                   <li class="star"></li>
@@ -499,7 +518,7 @@
             <div class="display_number_hotel_wrap">
               <label
                 for="display_number_hotels"
-                class="display_number_hotels filter_parametrs_label"
+                class="display_number_hotels filter_parametrs_label-color"
                 >Гостиниц на странице:</label
               >
               <div class="display_number_hotels_form">
